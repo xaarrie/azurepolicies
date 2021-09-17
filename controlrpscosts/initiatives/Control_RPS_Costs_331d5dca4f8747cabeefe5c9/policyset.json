@@ -1,0 +1,42 @@
+{
+ "properties": {
+  "displayName": "Control RPS Costs",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "RPS",
+   "version": "1.0.0.1",
+   "createdBy": "cceaadd4-8cd6-46ed-88b4-7ef5cc5e03a2",
+   "createdOn": "2021-09-17T09:57:08.1479782Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Allowed SQL DB SKUs_1",
+    "policyDefinitionId": "/subscriptions/ba9b175e-2d35-4f6a-a8c6-31c3fb0d30be/providers/Microsoft.Authorization/policyDefinitions/sql-db-skus",
+    "parameters": {
+     "listOfSKUId": {
+      "value": [
+       "S0",
+       "S1",
+       "S2",
+       "S3",
+       "S4"
+      ]
+     },
+     "listOfSKUName": {
+      "value": [
+       "Standard"
+      ]
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/ba9b175e-2d35-4f6a-a8c6-31c3fb0d30be/providers/Microsoft.Authorization/policySetDefinitions/331d5dca4f8747cabeefe5c9",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "331d5dca4f8747cabeefe5c9"
+}
